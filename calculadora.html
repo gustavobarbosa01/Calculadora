@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Style CSS-->
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/calculadora.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
+  <title>Calculadora Gustavo</title>
+</head>
+<body>
+  <div class="calculadora">
+    <div>
+      <input class="display" id="display">
+    </div>
+    <div class="btnCalculadora">
+      <button id="limparDiplay" onclick="limparUltimoNumero()">CE</button>
+      <button id="limparCalculo" onclick="limparDiplay()">C</button>
+      <button id="backspace" onclick="backspace()">&#10094;</button>
+      <button id="dividir" onclick="add('/')">&#247;</button> 
+      <button id="btn7" onclick="add('7')">7</button>
+      <button id="btn8" onclick="add('8')">8</button>
+      <button id="btn9" onclick="add('9')">9</button>
+      <button id="multiplicar" onclick="add('*')">&#215</button>
+      <button id="btn4" onclick="add('4')">4</button>
+      <button id="btn5" onclick="add('5')">5</button>
+      <button id="btn6" onclick="add('6')">6</button>
+      <button id="subtrair" onclick="add('-')">&#8722;</button>
+      <button id="btn1" onclick="add('1')">1</button>
+      <button id="btn2" onclick="add('2')">2</button>
+      <button id="btn3" onclick="add('3')">3</button>
+      <button id="adicionar" onclick="add('+')">&#43;</button>
+      <button id="inverter" onclick="inverterValor()">&#177;</button>
+      <button id="btn0" onclick="add('0')">0</button>
+      <button id="decimal" onclick="add(',')">,</button>
+      <button id="igual" onclick="calcularDisplay('=')">=</button>
+    </div>
+  </div>
+  <footer>
+    <p class="copyrigth">&#169;Gustavo Barbosa - Sonner Sistemas - 2021</p>
+  </footer>
+  <!-- Script JS -->
+  <script src="js/selecionar-botao.js"></script>
+</body>
+</html>
